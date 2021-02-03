@@ -1,0 +1,427 @@
+.Dashboard{
+
+}
+.Dashboard h1{
+    margin-top: 40px;
+}
+.Dashboard .nav{
+    margin-top: 40px
+}
+.template_list{
+    margin-top: 40px;
+  }
+  .template_img{
+    background-image: url(../img/templates.png);
+    border-radius: 10px 10px 0px 0px;
+    height: 196px;
+    width: 250px;
+  }
+  .template_img:after{
+    border-radius: 10px 10px 0px 0px;
+    content: "";
+    background-color:#00000075;
+    position: absolute;
+    width: 270px;
+    height: 196px;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+  }
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    transform: translate(70px, -110px);
+  }
+  .view_template_btn{
+    color: #FFFFFF;
+    background: #FFFFFF2E 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+    outline: none;
+    border: none;
+    padding: 5px 15px;
+  }
+  .view_template_btn:focus{
+    outline: none;
+  }
+  .template_list .user{
+    float: right;
+    position: absolute;
+    transform: translate(30px, 70px);
+    width: 30px;
+    border-radius: 15px
+}
+.share_more{
+  border-radius: 0px 0px 10px 10px;
+  color: #FFFFFF;
+  background-color: #137EF9;
+  width: 270px;
+}
+.btn_more_opt{
+    color: #fff;
+  }
+  .btn_more_opt:hover{
+    color: #fff;
+  }
+  .share_icon{
+    margin-top: 10px;
+    margin-left: 35px;
+  }
+  .share_opt_btn{
+    margin-left: 20px;
+  }
+  .more_icon{
+    margin-top: 10px;
+    margin-left: 35px;
+  }
+  .more_opt_btn{
+    margin-left: 20px;
+  }
+  .template_name{
+    padding: 5px;
+    width: 270px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #F8F9F9;
+  }
+  .team_work_icon{
+      position: absolute;
+      transform: translate(-140%, 60%);
+      font-size: 70px;
+      color: #137EF9;
+  }
+  .quick_action{
+    position: absolute;
+    transform: translate(-160%, 70%);
+    font-size: 70px;
+    color: #137EF9;
+  }
+  .notes_icon{
+    position: absolute;
+    transform: translate(-210%, 60%);
+    font-size: 70px;
+    color: #137EF9;
+  }
+  .more_list a{
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .dropdown-menu{
+    min-width: 20rem;
+  }
+  .input_copy_button img{
+    width: '16px'; 
+    margin-right: '10px'
+
+  }
+  .lbl-people{
+    margin-left: 15px; 
+    margin-bottom: 0;
+  }
+  .people_drop_button img{
+    width: 16px;
+    margin-right: 10px;
+  }
+  .add_more_user_btn img{
+    width: 16px;
+    margin-right: 10px;
+  }
+  .lbl-shared{
+    margin-left: 25px;
+  }
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: 0rem;
+    }
+  }
+  .skip_btn{
+    border-radius: 15px;
+      padding: 6px 30px;
+      background-color: #fff !important;
+      color: #000;
+  }
+  .skip_btn:focus{
+     color: #000 !important;
+     box-shadow: none;
+  }
+  .skip_btn:active{
+     color: #000 !important;
+   }
+   .skip_btn:hover{
+     color: #000 !important;
+   }
+  .save_btn{
+    border-radius: 15px;
+      padding: 6px 30px;
+  }
+  .rename_doc_btn{
+   border:none;
+   }
+   .name_before{
+    border: none;
+   }
+  .rename_doc_btn{
+        border:none;
+     }
+  .cancel_btn{
+    padding: 6px 25px;
+      border-radius: 15px;
+       border: 1px solid #B8B8B8 !important;
+       color:#202225; 
+       background-color:#FFFFFF;
+     }
+  .cancel_btn:focus {
+        outline: none;
+        background-color: #fff;
+        color: #000;
+   }
+  .cancel_btn:active {
+             outline: none;
+             color: #000 !important;
+     }
+  .cancel_btn:hover{
+        color: #000;
+        background-color: #fff !important;
+         outline: none !important;
+    }
+    .rename_btn{
+       padding: 6px 25px;
+      border-radius: 15px;
+  
+    }
+    .rename_btn:hover{
+        background-color: #137EF9;
+        color: #fff;
+    } 
+    .close:focus{
+        outline: none;
+    }
+    .rename_head{
+      border: none;
+    }
+   .new_doc_head{
+      border: none;
+    }
+   .new_doc_btn{
+      border: none;
+      padding: 20px 140px;
+    }
+    .get_btn{
+      padding: 8px 60px;
+       border-radius: 12px;
+       color: #137EF9;
+       border-color: #137EF9;
+    }
+     .get_btn:active{
+      background-color: #fff !important;
+      color: #137EF9 !important;
+      border-color: #137EF9 !important;
+    }
+    .get_btn:hover{
+      background-color: #fff !important;
+      color: #137EF9 !important;
+      border-color: #137EF9 !important;
+    }
+    .get_btn:focus{
+      box-shadow: none;
+    }
+      
+    .can_share_btn{
+      background-color: #FFFFFF;
+      color: #202225;
+    }
+     .can_share_btn:hover{
+      background-color: #FFFFFF !important;
+      color: #202225;
+    }
+    .can_share_btn:focus{
+      background-color: #FFFFFF !important;
+      color: #202225;
+      outline: none;
+    }
+    .can_share_btn:active{
+      background-color: #FFFFFF !important;
+      color: #202225;
+      outline: none;
+    }
+    .adv_share_btn{
+      background-color: #FFFFFF;
+      color: #137EF9;
+      border-color: #137EF9;
+    }
+    .adv_share_btn:focus{
+       border-color: #137EF9 !important;
+      background-color: #FFFFFF;
+      color: #137EF9;
+      outline: none;
+      box-shadow: none !important;
+    }
+     .adv_share_btn:active{
+       border-color: #137EF9;
+      background-color: #FFFFFF !important;
+      color: #137EF9 !important;
+      outline: none;
+    }
+    .adv_share_btn:hover{
+      background-color: #FFFFFF;
+      color: #137EF9;
+      border-color: 137EF9;
+    }
+    .check_btn{
+      color: white;
+      background-color: lightgreen;
+      border-radius: 20px;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+    .added_share_option{
+      color: #202225;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 2px solid #D4E5F9;
+      border-radius: 10px;
+      padding: 8px;
+      width: 100%;
+      outline: none;
+    }
+    .input_copy_button{
+      background: #F5F9FF 0% 0% no-repeat padding-box;
+      border-radius: 10px;
+      opacity: 1;
+      margin: 14px 16px 0px 0px;
+      padding: 4px -1px 4px 5px;
+      text-align: -webkit-center;
+      font: normal normal normal 18px/24px Nunito Sans;
+      letter-spacing: 0px;
+      color: #878787;
+      opacity: 1;
+      border-radius: 20px;
+      border: none;
+    }
+    .copy_input_button{
+      color: #137EF9;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 2px solid #137EF9;
+      border-radius: 10px;
+      opacity: 1;
+      margin: 12px 0px 0px 0px;
+    }
+    .copy_input_button:focus{
+      box-shadow: none !important;
+    }
+    .copy_input_button:hover{
+      color: #137EF9;
+    }
+    .input_drop_button{
+     
+      border-radius: 10px !important;
+      opacity: 1;
+      margin: 14px -25px 0px 0px;
+      font: normal normal normal 18px/24px Nunito Sans;
+      letter-spacing: 0px;
+      color: #878787;
+     }
+    .drop_input_button{
+     background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 2px solid #137EF9;
+      border-radius: 10px;
+      opacity: 1;
+      margin: 15px 40px;
+      color: #137EF9;
+    }
+    .drop_input_button:hover{
+      color: #137EF9;
+    }
+    .share_comment{
+      margin: 0px 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+  
+    .add_more_user_btn{
+      min-width: 10rem;
+      transform: translate3d(10px, -10px, 0px) !important;
+    }
+    .add_more_user_btn .active{
+      color: #137EF9;
+      border-left: 5px solid;
+      background-color: #fff;
+    }
+    .Collaboration_list:active{
+      
+      border-left: 4px solid #137EF9;
+    }
+     .Collaboration_list{
+      min-width: 12rem;
+     }
+    .Collaboration_list .active{
+      font-size: 15px;
+      background-color: #ECF5FF !important;
+      border-bottom: #ECF5FF !important;
+      color: #137EF9 !important;
+      border-left: 4px solid #137EF9;
+    }
+     .Collaboration_list a{
+       font-size: 15px;
+      color: #6E6E6E;
+     }
+   .coll_list{
+    background: #F5F9FF 0% 0% no-repeat padding-box;
+      border-radius: 5px;
+      padding: 5px;
+   }
+   .share_comment:focus{
+    outline: none;
+   }
+   .people_input_button{
+      border-radius: 10px !important;
+      opacity: 1;
+      margin: 14px 5px 0px 10px;
+      font: normal normal normal 18px/24px Nunito Sans;
+      letter-spacing: 0px;
+      color: #878787;
+   }
+   .people_drop_button{
+    color: #137EF9;
+    padding: 7px 23px;
+     background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 2px solid #137EF9;
+      border-radius: 10px;
+      opacity: 1;
+      margin: 15px 15px;
+   }
+    .people_drop_button:hover{
+      color: #137EF9;
+    }
+
+    .Collaboration_list img{
+      width: 12px;
+      margin-right: 10px;
+    }
+    .add_more_user_btn{
+      width: 16px;
+      margin-right: 10px;
+    }
+    .lbl-Collaborations{
+      margin-left: 10px;
+    }
+    .add-lbl-Collaborations{
+      margin-left: 10px;
+    }
+    .lbl-Shareable{
+      margin-left: 40px;
+    }
+    .advance-section{
+      margin-left: 10px;
+    }
+    .drop_input-img{
+      width: 16px;margin-right: 10px;
+    }
+    
