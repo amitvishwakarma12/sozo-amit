@@ -18,187 +18,187 @@ class Dashboard extends React.Component{
 
     render(){
         return(
-            <div class="container-fluid Dashboard">
-            <h3  className=""><strong>Welcome, Tayyabzeb!</strong></h3>
-            <nav class="nav">
-              <a class="nav-link active" href="#">Recent Document</a>
-              <a class="nav-link" href="#" style={{color: "#B8B8B8"}}>Recommend Documents</a>
+            <div className="container-fluid Dashboard">
+            <h3  classNameName="welcome_user_name"><strong>Welcome, Tayyabzeb!</strong></h3>
+            <nav className="nav dashboard_doc_tab">
+              <a className="nav-link active" href="#">Recent Document</a>
+              <a className="nav-link" href="#" style={{color: "#B8B8B8"}}>Recommend Documents</a>
             </nav>
-            <div class="row template_list">
-                <div class="col-md-3 ">
-                <div class="template_img"></div>
-                <div class="vertical-center">
-                  <button class="view_template_btn">Tap to Open</button>
-                  <img src={Group_user} class="user"/>
+            <div className="row template_list">
+                <div className="col-md-3" style={{marginBottom: "20px"}}>
+                <div className="template_img"></div>
+                <div className="vertical-center">
+                  <button className="view_template_btn">Tap to Open</button>
+                  <img src={Group_user} className="user"/>
                 </div>
-                <div class="row share_more">
-                  <div class="col-md-6">
-                    <a  data-toggle="modal" data-target="#exampleModal2"> 
-                      <i class="fas fa-share share_icon"></i>
+                <div className="row share_more">
+                  <div className="col-md-6">
+                    <a role="button" data-toggle="modal" data-target="#exampleModal2"> 
+                      <i className="fas fa-share share_icon"></i>
+                      <h6 className="share_opt_btn">Share</h6>
                     </a>
-                      
-                    <h6 class="share_opt_btn">Share</h6>
                   </div>
-                  <div class="col-md-6">
-                    <div class="dropdown show">
-                      <a class="btn_more_opt" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-ellipsis-h more_icon"></i>
+                  <div className="col-md-6">
+                    <div className="dropdown show">
+                      <a className="btn_more_opt" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i className="fas fa-ellipsis-h more_icon"></i>
+                        <h6 className="more_opt_btn">More</h6>
                       </a>
-                      <div class="dropdown-menu more_list" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Open</a>
-                        <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo">Rename</a>
+                      <div className="dropdown-menu more_list" aria-labelledby="dropdownMenuLink">
+                        <a className="dropdown-item" href="#">Open</a>
+                        <a className="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo">Rename</a>
 
                         
-                        <a class="dropdown-item" href="#">Delete</a>
-                        <a class="dropdown-item" href="#"data-toggle="modal" data-target="#exampleModalCenter">Share</a>
-                        <a class="dropdown-item" href="#">Add to starred</a>
-                        <a class="dropdown-item" href="#">Get Changed Notifications</a>
+                        <a className="dropdown-item" href="#">Delete</a>
+                        <a className="dropdown-item" href="#"data-toggle="modal" data-target="#exampleModalCenter">Share</a>
+                        <a className="dropdown-item" href="#">Add to starred</a>
+                        <a className="dropdown-item" href="#">Get Changed Notifications</a>
                       </div>
                     </div>
-                    <h6 class="more_opt_btn">More</h6>
                   </div>
                 </div>
                 {/* <!-- ********************************Modal on share withh others*************** --> */}
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
+                <div className="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered" role="document">
+                <div className="modal-content">
 
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLongTitle"><strong>Share with others</strong></h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <div className="modal-header">
+                          <h5 className="modal-title" id="exampleModalLongTitle"><strong>Share with others</strong></h5>
+                          <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                           <h6>Link share is on <span style={{float:'right', color: '#B8B8B8'}}>Shareable link
-                            <img src={check_icon} style={{width:"20"}}/></span></h6>
-                          <select class="added_share_option">
+                            <img src={check_icon} style={{width: "20px", margin: "0px 0px 2px 5px"}}/></span></h6>
+                          <select className="added_share_option">
                             <option>Edit and share ( public )</option>
                              <option>Edit and share ( public )</option>
                           </select>
-                          <div class="input-group mb-3">
-                            <input type="text" class="form-control input_copy_button" placeholder="https://www.flaticon.com/free-icon/copy-content_60990?term=copy&page" aria-describedby="button-addon2"/>
-                            <button class="btn copy_input_button" type="button" id="button-addon2"> <img src={copy}/>Copy</button>
+                          <div className="input-group mb-3">
+                            <input type="text" className="form-control input_copy_button" placeholder="https://www.flaticon.com/free-icon/copy-content_60990?term=copy&page" aria-describedby="button-addon2" disabled/>
+                            <button className="btn copy_input_button" type="button" id="button-addon2"> 
+                            <img src={copy}/>Copy</button>
                           </div>
                           </div>
                           <div>
                             <hr/>
                           </div>
                           <h5 className="lbl-people">People</h5>
-                          <div class="input-group">
-                            <input type="text" class="form-control people_input_button" placeholder="Add more people here...." aria-describedby="button-addon2"/>
+                          <div className="input-group">
+                            <input type="text" className="form-control people_input_button" placeholder="Add more people here...." aria-describedby="button-addon2"/>
 
-                            <div class="dropdown">
-                              <button class="btn people_drop_button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <img src={share_profile_img} />
-                                <i class="fas fa-caret-down"></i>
+                            <div className="dropdown">
+                              <button className="btn people_drop_button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <img src={share_profile_img} />
+                                <i className="fas fa-caret-down"></i>
                               </button>
-                              <div class="dropdown">
-                                <div class="dropdown-menu add_more_user_btn" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item active" href="#"> <img src={share_profile_img} />Edit and Share</a>
-                                  <a class="dropdown-item" href="#"><img src={edit_icon} />Edit</a>
-                                  <a class="dropdown-item" href="#"><img src={comment_icon} />Comment</a>
-                                   <a class="dropdown-item" href="#"><img src={view_icon} />View</a>
+                              <div className="dropdown">
+                                <div className="dropdown-menu add_more_user_btn" aria-labelledby="dropdownMenuButton">
+                                  <a className="dropdown-item active" href="#"> <img src={share_profile_img} />Edit and Share</a>
+                                  <a className="dropdown-item" href="#"><img src={edit_icon} />Edit</a>
+                                  <a className="dropdown-item" href="#"><img src={comment_icon} />Comment</a>
+                                   <a className="dropdown-item" href="#"><img src={view_icon} />View</a>
                                  </div>
                               </div>
                             </div>
                           </div>
-                          <p className="lbl-shared">Shared with John Doe +3 more. Edit</p>
-                         <textarea rows="4" class="share_comment" placeholder="Add Custom Comments here..."></textarea>
-                        <div class="modal-footer">
-                           <button type="button" class="btn btn-secondary can_share_btn " data-dismiss="modal">Cancel</button>
-                          <button type="button" class="btn btn-secondary adv_share_btn" data-toggle="modal" data-target="#exampleModal">Advanced</button>
-                          <button type="button" class="btn btn-primary">Done</button>
+                          <p className="lbl-shared">Shared with John Doe +3 more. <span href="#" style={{color: "#137EF9"}}><u><b>Edit</b></u></span></p>
+                         <textarea rows="3" className="share_comment" placeholder="Add Custom Comments here..."></textarea>
+                        <div className="modal-footer" style={{borderTop: "0px"}}>
+                           <button type="button" className="btn can_share_btn " data-dismiss="modal">Cancel</button>
+                          <button type="button" className="btn  adv_share_btn" data-toggle="modal" data-target="#exampleModal">Advanced</button>
+                          <button type="button" className="btn btn-primary done_btn">Done</button>
                         </div>
                       </div>
                     </div>
                   </div>
                   {/* <!-- ***************** Modal Start ****************** --> */}
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-     <div class="modal-dialog" role="document">
-       <div class="modal-content" style={{width: "130%"}}>
-         <div class="modal-header">
-           <h5 class="modal-title" id="exampleModalLabel">Advanced Share Settings</h5>
-           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div className="modal-dialog" role="document">
+       <div className="modal-content" style={{width: "130%"}}>
+         <div className="modal-header" style={{borderBottom: "0px"}}>
+           <h5 className="modal-title" id="exampleModalLabel">Advanced Share Settings</h5>
+           <button type="button" className="close" data-dismiss="modal" aria-label="Close">
              <span aria-hidden="true">&times;</span>
            </button>
          </div>
-         <div class="modal-body" style={{padding: "0px"}}>
-           <div class="d-flex align-items-start">
-               <div class="nav flex-column Collaboration_list nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                 <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><img src={collaboration_icon} />With Collaboration</a>
-                 <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><img src={collaborat_icon} />With Collaboration</a>
-                 <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><img src={collaborat_icon} />With Collaboration</a>
-                 <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><img src={collaborat_icon} />With Collaboration</a>
-                 <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><img src={collaborat_icon} />With Collaboration</a>
+         <div className="modal-body" style={{padding: "0px"}}>
+           <div className="d-flex align-items-start">
+               <div className="nav flex-column Collaboration_list nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                 <a className="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#" role="tab" aria-controls="v-pills-home" aria-selected="true"><img src={collaboration_icon} />With Collaboration</a>
+                 <a className="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#" role="tab" aria-controls="v-pills-profile" aria-selected="false"><img src={collaborat_icon} />With Collaboration</a>
+                 <a className="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false"><img src={collaborat_icon} />With Collaboration</a>
+                 <a className="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false"><img src={collaborat_icon} />With Collaboration</a>
+                 <a className="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false"><img src={collaborat_icon} />With Collaboration</a>
                </div>
-               <div class="tab-content" id="v-pills-tabContent">
-                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+               <div className="tab-content" id="v-pills-tabContent">
+                 <div className="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                    <h5 className="lbl-Collaborations" >Add Collaborations</h5>
                    <div className="add-lbl-Collaborations">
                      <input type="radio" id="People"  value="People"/>
-                     <label for="People">People</label>
+                     <label for="People" style={{marginLeft: "10px"}}>People</label>
                      <span className="lbl-Shareable" >
                        <input type="radio" id="Shareable Link" value="Shareable Link"/>
-                     <label for="Shareable Link">Shareable Link</label>
+                     <label for="Shareable Link" style={{marginLeft: "10px"}}>Shareable Link</label>
                      </span>
                      <br/>
                    </div>
 
-                   <div class="input-group advance-section" >
-                     <input type="text" class="form-control input_drop_button" placeholder="Add more people here...." aria-describedby="button-addon2"/>
-                     <div class="dropdown">
-                       <button class="btn drop_input_button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <img src={share_profile_img} className="drop_input-img" />
-                         <i class="fas fa-caret-down"></i>
+                   <div className="input-group advance-section" >
+                     <input type="text" className="form-control input_drop_button" placeholder="Add more people here...." aria-describedby="button-addon2"/>
+                     <div className="dropdown">
+                       <button className="btn drop_input_button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  <img src={share_profile_img} className="drop_input-img" />
+                         <i className="fas fa-caret-down"></i>
                        </button>
-                       <div class="dropdown">
-                         <div class="dropdown-menu add_more_user_btn" aria-labelledby="dropdownMenuButton">
-                           <a class="dropdown-item" href="#" style={{color: "#137EF9"}}> <img src={share_profile_img} />Edit and Share</a>
-                           <a class="dropdown-item" href="#"><img src={edit_icon} />Edit</a>
-                           <a class="dropdown-item" href="#"><img src={comment_icon} />Comment</a>
-                            <a class="dropdown-item" href="#"><img src={view_icon} />View</a>
+                       <div className="dropdown">
+                         <div className="dropdown-menu add_more_user_btn" aria-labelledby="dropdownMenuButton">
+                           <a className="dropdown-item" href="#" style={{color: "#137EF9"}}> <img src={share_profile_img} />Edit and Share</a>
+                           <a className="dropdown-item" href="#"><img src={edit_icon} />Edit</a>
+                           <a className="dropdown-item" href="#"><img src={comment_icon} />Comment</a>
+                            <a className="dropdown-item" href="#"><img src={view_icon} />View</a>
                           </div>
                        </div>
                      </div>
                    </div>
 
-                   <textarea rows="4" class="share_comment" placeholder="Add Custom Comments here..." style={{width: "90%"}}></textarea>
-                    <button type="button" class="btn btn-primary" style={{marginLeft: "360px"}}>Share</button>
+                   <textarea rows="4" className="share_comment" placeholder="Add Custom Comments here..." style={{width: "90%"}}></textarea>
+                    <button type="button" className="btn btn-primary share_advance_btn" style={{marginLeft: "360px"}}>Share</button>
                    <h5>Collaborations</h5>
-                   <ul class="list-group" style={{marginBottom: "10px", marginRight: "30px"}}>
-                     <li class="list-group-item coll_list">
-                       <div class="row">
-                         <div class="col-md-2"><img src={coll_user} style={{marginLeft: "15px"}}/></div>
-                         <div class="col-md-5"><label>Chad Ingram</label></div>
-                         <div class="col-md-5"><label>Owner</label></div>
+                   <ul className="list-group" style={{marginBottom: "10px", marginRight: "30px"}}>
+                     <li className="list-group-item coll_list">
+                       <div className="row">
+                         <div className="col-md-2"><img src={coll_user} style={{marginLeft: "15px"}}/></div>
+                         <div className="col-md-5"><label>Chad Ingram</label></div>
+                         <div className="col-md-5"><label>Owner</label></div>
                        </div>
                      </li>
-                     <li class="list-group-item coll_list" style={{marginTop: "10px"}}>
-                       <div class="row">
-                         <div class="col-md-2"><img src={coll_tag} style={{marginLeft: "15px"}}/></div>
-                         <div class="col-md-5"><label style={{color: "#137EF9"}}>Chad Ingram</label></div>
-                         <div class="col-md-5"><p>Can Edit & Share</p></div>
+                     <li className="list-group-item coll_list" style={{marginTop: "10px"}}>
+                       <div className="row">
+                         <div className="col-md-2"><img src={coll_tag} style={{marginLeft: "15px"}}/></div>
+                         <div className="col-md-5"><label style={{color: "#137EF9"}}>Chad Ingram</label></div>
+                         <div className="col-md-5"><p>Can Edit & Share</p></div>
                        </div>
                      </li>
-                     <li class="list-group-item coll_list" style={{marginTop: "10px"}}>
-                       <div class="row">
-                         <div class="col-md-2"><img src={coll_user} style={{marginLeft: "15px;"}}/></div>
-                         <div class="col-md-5"><label>Chad Ingram</label></div>
-                         <div class="col-md-5"><p>Can Edit & Share</p></div>
+                     <li className="list-group-item coll_list" style={{marginTop: "10px"}}>
+                       <div className="row">
+                         <div className="col-md-2"><img src={coll_user} style={{marginLeft: "15px"}}/></div>
+                         <div className="col-md-5"><label>Chad Ingram</label></div>
+                         <div className="col-md-5"><p>Can Edit & Share</p></div>
                        </div>
                      </li>
-                     <li class="list-group-item coll_list" style={{marginTop: "10px"}}>
-                       <div class="row">
-                         <div class="col-md-2"><img src={coll_user} style={{marginLeft: "15px;"}}/></div>
-                         <div class="col-md-5"><label>Chad Ingram</label></div>
-                         <div class="col-md-5"><p>Can Edit & Share</p></div>
+                     <li className="list-group-item coll_list" style={{marginTop: "10px"}}>
+                       <div className="row">
+                         <div className="col-md-2"><img src={coll_user} style={{marginLeft: "15px"}}/></div>
+                         <div className="col-md-5"><label>Chad Ingram</label></div>
+                         <div className="col-md-5"><p>Can Edit & Share</p></div>
                        </div>
                      </li>
                    </ul>
                  </div>
-                 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"></div>
-                 <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-                 <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                 <div className="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"></div>
+                 <div className="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                 <div className="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
                </div>
              </div>
          </div>
@@ -206,154 +206,144 @@ class Dashboard extends React.Component{
      </div>
    </div>
    {/* <!-- ******************Modal One Rename Doc ******************** --> */}
-   <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header rename_head">
-                          <h5 class="modal-title" id="exampleModalLabel"><strong>Rename Document</strong></h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+   <div className="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog" role="document">
+                      <div className="modal-content">
+                        <div className="modal-header rename_head">
+                          <h5 className="modal-title" id="exampleModalLabel"><strong>Rename Document</strong></h5>
+                          <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                           <form>
-                            <div class="form-group">
-                              <label for="recipient-name" class="col-form-label">Enter your new document Name:</label>
-                              <input type="text" class="form-control" id="recipient-name"/>
+                            <div className="form-group">
+                              <label for="recipient-name" className="col-form-label">Enter your new document Name:</label>
+                              <input type="text" className="form-control" id="recipient-name"/>
                             </div>
                           </form>
                         </div>
-                        <div class="modal-footer rename_doc_btn">
-                          <button type="button" class="btn btn-secondary cancel_btn"            data-dismiss="modal">Cancel</button>
-                          <button type="button" class="btn btn-primary rename_btn">Rename</button>
+                        <div className="modal-footer rename_doc_btn">
+                          <button type="button" className="btn btn-secondary cancel_btn"            data-dismiss="modal">Cancel</button>
+                          <button type="button" className="btn btn-primary rename_btn">Rename</button>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header name_before">
-                        <h5 class="modal-title" id="exampleModalLabel"> <strong>Name Before Sharing</strong></h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <div className="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div className="modal-dialog" role="document">
+                    <div className="modal-content">
+                      <div className="modal-header name_before">
+                        <h5 className="modal-title" id="exampleModalLabel"> <strong>Name Before Sharing</strong></h5>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
-                      <div class="modal-body">
+                      <div className="modal-body">
                         <form>
-                          <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Please name your untitled document before sharing:</label>
-                            <input type="text" class="form-control" id="recipient-name"/>
+                          <div className="form-group">
+                            <label for="recipient-name" className="col-form-label">Please name your untitled document before sharing:</label>
+                            <input type="text" className="form-control" id="recipient-name"/>
                           </div>
                         </form>
                       </div>
-                      <div class="modal-footer rename_doc_btn">
-                        <button type="button" class="btn btn-secondary skip_btn " style={{border: "1px solid #B8B8B8"}}>Skip</button>
-                        <button type="button" class="btn btn-primary save_btn">Save</button>
+                      <div className="modal-footer rename_doc_btn">
+                        <button type="button" className="btn skip_btn " style={{border: "1px solid #B8B8B8"}}>Skip</button>
+                        <button type="button" className="btn btn-primary save_btn">Save</button>
                       </div>
                     </div>
                   </div>
                 </div>
                 {/* <!--*********************button new doc***************************  --> */}
-                <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                          <div class="modal-header new_doc_head">
-                            <h5 class="modal-title" id="exampleModalLabel">New Document</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="far fa-times"></i>
+                <div className="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog">
+                      <div className="modal-content">
+                          <div className="modal-header new_doc_head">
+                            <h5 className="modal-title" id="exampleModalLabel">New Document</h5>
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close"><i className="far fa-times"></i>
                               <span aria-hidden="true">&times;</span>
                             </button>
                           </div>
-                          <div class="modal-body text-center">
+                          <div className="modal-body text-center">
                             <img src={S1} width="300"/>
                               <p>Create New Documents & Share with your friends <style type="text-center"></style></p>
                           </div>
-                          <div class="modal-footer new_doc_btn">
-                            <button type="button" class="btn btn-outline-primary get_btn">Get Started!</button>
+                          <div className="modal-footer new_doc_btn">
+                            <button type="button" className="btn btn-outline-primary get_btn">Get Started!</button>
                           </div>
                       </div>
                     </div>
                   </div>
                 </div>
-
-
-
-                
-
-
-               
-
-                
-                <div class="col-md-3">
-                <div class="template_img">
+                <div className="col-md-3" style={{marginBottom: "20px"}}>
+                <div className="template_img">
                </div>
-               <div class="vertical-center">
-                <button class="view_template_btn">Tap to Open</button>
-                <img src={Group_user} class="user"/>
+               <div className="vertical-center">
+                <button className="view_template_btn">Tap to Open</button>
+                <img src={Group_user} className="user"/>
               </div>
-              <div class="row template_name">
-                <div class="col-md-2" style={{paddingRight: "0px;"}}>
+              <div className="row template_name">
+                <div className="col-md-2" style={{paddingRight: "0px;"}}>
                   <img src={sozo} width="15"/>
                 </div>
-                <div class="col-md-10" style={{paddingLeft: "0px"}}>
-                  <label style={{fontWeight: "800", fontSize: "15px", margin: "0px"}}>Align Original SiteMap</label>
-                  <h6 style={{color: "#A2A2A2", fontSize: "12px"}}>Open an hour ago</h6>
+                <div className="col-md-10" style={{paddingLeft: "0px"}}>
+                  <label style={{fontWeight: "800", fontSize: "13px", margin: "0px"}}>Align Original SiteMap</label>
+                  <h6 style={{color: "#A2A2A2", fontSize: "10px"}}>Open an hour ago</h6>
                 </div>
               </div>
 
                 </div>
-                <div class="col-md-3">
-                <div class="template_img">
+                <div className="col-md-3" style={{marginBottom: "20px"}}>
+                <div className="template_img">
                </div>
-               <div class="vertical-center">
-                <button class="view_template_btn">Tap to Open</button>
-                <img src={Group_user} class="user"/>
+               <div className="vertical-center">
+                <button className="view_template_btn">Tap to Open</button>
+                <img src={Group_user} className="user"/>
               </div>
-              <div class="row template_name">
-                <div class="col-md-2" style={{paddingRight: "0px"}}>
+              <div className="row template_name">
+                <div className="col-md-2" style={{paddingRight: "0px"}}>
                   <img src={sozo} width="15"/>
                 </div>
-                <div class="col-md-10" style={{paddingLeft: "0px"}}>
-                <label style={{fontWeight: "800", fontSize: "15px", margin: "0px"}}>Align Original SiteMap</label>
-                  <h6 style={{color: "#A2A2A2", fontSize: "12px"}}>Open an hour ago</h6>
+                <div className="col-md-10" style={{paddingLeft: "0px"}}>
+                <label style={{fontWeight: "800", fontSize: "13px", margin: "0px"}}>Align Original SiteMap</label>
+                  <h6 style={{color: "#A2A2A2", fontSize: "10px"}}>Open an hour ago</h6>
                 </div>
               </div>
                 </div>
-                <div class="col-md-3">
-                <div class="template_img">
-               </div>
-               <div class="vertical-center">
-                <button class="view_template_btn">Tap to Open</button>
-                <img src={Group_user} class="user"/>
-              </div>
-              <div class="row template_name">
-                <div class="col-md-2" style={{paddingRight: "0px"}}>
-                  <img src={sozo} width="15"/>
+                <div className="col-md-3" style={{marginBottom: "20px"}}>
+                    <div className="template_img"></div>
+                  <div className="vertical-center">
+                    <button className="view_template_btn">Tap to Open</button>
+                    <img src={Group_user} className="user"/>
+                  </div>
+                  <div className="row template_name">
+                    <div className="col-md-2" style={{paddingRight: "0px"}}>
+                      <img src={sozo} width="15"/>
+                    </div>
+                    <div className="col-md-10" style={{paddingLeft: "0px"}}>
+                    <label style={{fontWeight: "800", fontSize: "13px", margin: "0px"}}>Align Original SiteMap</label>
+                      <h6 style={{color: "#A2A2A2", fontSize: "10px"}}>Open an hour ago</h6>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-10" style={{paddingLeft: "0px"}}>
-                <label style={{fontWeight: "800", fontSize: "15px", margin: "0px"}}>Align Original SiteMap</label>
-                  <h6 style={{color: "#A2A2A2", fontSize: "12px"}}>Open an hour ago</h6>
-                </div>
-              </div>
-                </div>
-                
+
             </div>
-            <div style={{marginTop: "10%", backgroundColor: "#F6FBFE"}}>
-            <h5 style={{textAlign: "center", fontWeight: "800"}}>What you like to do!</h5>  
-            <div class="row" style={{marginTop: "40px"}}>
-              <div class="col-md-4" style={{textAlign: "right"}}>
+            <div style={{margin: "40px", backgroundColor: "#F6FBFE"}}>
+            <h5 style={{textAlign: "center", fontWeight: "800", paddingTop: "15px"}}>What you like to do!</h5>  
+            <div className="row" style={{padding: "50px"}}>
+              <div className="col-md-4" style={{textAlign: "right"}}>
                 <img src={rect}/>
-                <i class="fas fa-users team_work_icon"></i>
+                <i className="fas fa-users team_work_icon"></i>
                 <p style={{color: "#137EF9" ,marginTop: "5px"}}>Better Teamwork together</p>
               </div>
-              <div class="col-md-4" style={{textAlign: "center"}}>
+              <div className="col-md-4" style={{textAlign: "center"}}>
                 <img src={rect}/>
-                <i class="fas fa-magic quick_action"></i>
+                <i className="fas fa-magic quick_action"></i>
                 <p style={{color: "#137EF9", marginTop: "5px"}}>How to Quick Action</p>
               </div>
-              <div class="col-md-4">
+              <div className="col-md-4">
                 <img src={rect}/>
-                <i class="far fa-clipboard notes_icon"></i>
+                <i className="far fa-clipboard notes_icon"></i>
                 <p style={{color: "#137EF9", marginTop: "5px"}}>Stay focus with Notes</p>
               </div>
             </div>

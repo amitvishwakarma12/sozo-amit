@@ -7,21 +7,27 @@
 .Dashboard .nav{
     margin-top: 40px
 }
+.dashboard_doc_tab{
+  margin-left: 25px;
+}
 .template_list{
-    margin-top: 40px;
-  }
+   margin: 40px;
+}
+.welcome_user_name{
+  margin: 15px;
+}
   .template_img{
     background-image: url(../img/templates.png);
     border-radius: 10px 10px 0px 0px;
     height: 196px;
-    width: 250px;
+    width: 225px;
   }
   .template_img:after{
     border-radius: 10px 10px 0px 0px;
     content: "";
     background-color:#00000075;
     position: absolute;
-    width: 270px;
+    width: 240px;
     height: 196px;
     top: 0px;
     left: 0px;
@@ -30,7 +36,7 @@
   .vertical-center {
     margin: 0;
     position: absolute;
-    transform: translate(70px, -110px);
+    transform: translate(40px, -110px);
   }
   .view_template_btn{
     color: #FFFFFF;
@@ -55,7 +61,15 @@
   border-radius: 0px 0px 10px 10px;
   color: #FFFFFF;
   background-color: #137EF9;
-  width: 270px;
+  width: 240px;
+}
+.more_list.show{
+  min-width: 190px;
+  transform: translate(15px, 20px) !important;
+}
+.more_list a:focus{
+  background-color: #fff;
+  color: #000;
 }
 .btn_more_opt{
     color: #fff;
@@ -66,20 +80,24 @@
   .share_icon{
     margin-top: 10px;
     margin-left: 35px;
+    font-size: 15px;
   }
   .share_opt_btn{
     margin-left: 20px;
+    font-size: 15px;
   }
   .more_icon{
     margin-top: 10px;
     margin-left: 35px;
+    font-size: 15px;
   }
   .more_opt_btn{
     margin-left: 20px;
+    font-size: 15px;
   }
   .template_name{
     padding: 5px;
-    width: 270px;
+    width: 240px;
     border-radius: 0px 0px 10px 10px;
     background-color: #F8F9F9;
   }
@@ -126,7 +144,7 @@
     margin-right: 10px;
   }
   .lbl-shared{
-    margin-left: 25px;
+    margin-left: 15px;
   }
   @media (min-width: 768px) {
     #sidebar-wrapper {
@@ -161,6 +179,9 @@
   .save_btn{
     border-radius: 15px;
       padding: 6px 30px;
+  }
+  .save_btn:focus{
+    box-shadow: none;
   }
   .rename_doc_btn{
    border:none;
@@ -237,6 +258,7 @@
     .can_share_btn{
       background-color: #FFFFFF;
       color: #202225;
+      border: 1px solid #B8B8B8;
     }
      .can_share_btn:hover{
       background-color: #FFFFFF !important;
@@ -246,11 +268,14 @@
       background-color: #FFFFFF !important;
       color: #202225;
       outline: none;
+      box-shadow: none;
     }
     .can_share_btn:active{
       background-color: #FFFFFF !important;
-      color: #202225;
-      outline: none;
+      color: #000;
+    }
+    .done_btn:focus{
+      box-shadow: none;
     }
     .adv_share_btn{
       background-color: #FFFFFF;
@@ -292,16 +317,12 @@
       outline: none;
     }
     .input_copy_button{
-      background: #F5F9FF 0% 0% no-repeat padding-box;
-      border-radius: 10px;
-      opacity: 1;
+      background: #F5F9FF 0% 0% no-repeat padding-box !important;
       margin: 14px 16px 0px 0px;
-      padding: 4px -1px 4px 5px;
       text-align: -webkit-center;
       font: normal normal normal 18px/24px Nunito Sans;
       letter-spacing: 0px;
       color: #878787;
-      opacity: 1;
       border-radius: 20px;
       border: none;
     }
@@ -312,6 +333,9 @@
       border-radius: 10px;
       opacity: 1;
       margin: 12px 0px 0px 0px;
+    }
+    .copy_input_button img{
+      margin-right: 5px;
     }
     .copy_input_button:focus{
       box-shadow: none !important;
@@ -343,6 +367,7 @@
       margin: 0px 15px;
       border: 1px solid #ccc;
       border-radius: 10px;
+      padding: 5px 12px;
     }
   
     .add_more_user_btn{
@@ -354,9 +379,12 @@
       border-left: 5px solid;
       background-color: #fff;
     }
+    .add_more_user_btn a{
+      padding: 10px;
+    }
     .Collaboration_list:active{
       
-      border-left: 4px solid #137EF9;
+      /* border-left: 4px solid #137EF9; */
     }
      .Collaboration_list{
       min-width: 12rem;
@@ -422,6 +450,10 @@
       margin-left: 10px;
     }
     .drop_input-img{
-      width: 16px;margin-right: 10px;
+      width: 16px;
+      margin-right: 10px;
+    }
+    .share_advance_btn:focus{
+      box-shadow: none;
     }
     

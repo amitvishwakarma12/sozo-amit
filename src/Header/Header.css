@@ -150,8 +150,11 @@
 .d-flex.toggled .menu i {
   margin-left: 10px;
 }
+.btn_new_document i{
+  margin-right: 10px;
+}
 .show_add_btn {
-  padding: 10px 10px;
+  padding: 7px 10px;
   border-radius: 10px;
   border: none;
   background-color: #137ef9;
@@ -190,6 +193,13 @@
   color: #000;
   margin-top: 8px;
 }
+.notification_list{
+  padding: 5px 5px;
+}
+.notification_list:focus{
+  background-color: #fff;
+  color: #000;
+}
 .Upgrade_btn {
   background: transparent linear-gradient(257deg, #ffdb25 0%, #ff8c17 100%) 0%
     0% no-repeat padding-box;
@@ -205,9 +215,57 @@
 .Upgrade_btn:focus {
   outline: none;
 }
-.nav .active {
+/* .nav .active {
   border-bottom: 6px solid #137ef9;
+} */
+
+.dashboard_doc_tab .nav-link.active{
+  border-bottom: 6px solid #137ef9;
+  margin: 0px 20px 0 20px;
+  padding: 0px 0px 5px 0px;
 }
+
+.dashboard_doc_tab .nav-link{
+  margin: 0px 20px 0 20px;
+  padding: 0px 0px 5px 0px;
+}
+
+.new_whiteboard{
+  text-decoration: none !important;
+}
+.white_board:focus{
+  outline: none;
+  background-color: #fff;
+  color: #000;
+}
+.new_folder:focus{
+  outline: none;
+  background-color: #fff;
+  color: #000;
+}
+.home{
+  text-decoration: none !important;
+}
+.Documents{
+  text-decoration: none !important;
+}
+.Templates{
+  text-decoration: none !important;
+}
+.Training{
+  text-decoration: none !important;
+}
+.user-profile a:focus{
+  background-color: #fff;
+  color: #000;
+}
+.profile_img{
+  padding-top: 8px;
+}
+.dropdown_icon{
+  padding-top: 15px;
+}
+
 
 /* sidebar */
 /*!
@@ -263,9 +321,6 @@
 .span-title {
   font-weight: 800;
   margin-left: 3px;
-}
-.dropdown-menu.show {
-    /* transform: translate3d(32px, 0px, 0px) !important; */
 }
 .doc-subMenu {
  

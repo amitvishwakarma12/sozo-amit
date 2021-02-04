@@ -61,14 +61,14 @@ class Header extends React.Component {
                   className="dropdown-menu doc-subMenu"
                   aria-labelledby="dropdownMenu2"
                 >
-                    <Link to="/drawing"><button className="dropdown-item" type="button">
+                    <Link to="/drawing" className="new_whiteboard"><button className="dropdown-item white_board" type="button">
                     <i
                       className="fas fa-desktop mr-2"
                       style={{ color: "#AAD2FF" }}
                     ></i>
                     New Whiteboard
                   </button></Link>
-                  <button className="dropdown-item" type="button">
+                  <button className="dropdown-item new_folder" type="button">
                     <i
                       className="fas fa-folder mr-2"
                       style={{ color: "#AAD2FF" }}
@@ -80,14 +80,14 @@ class Header extends React.Component {
             </li>
             <div className="menu">
               
-              <li className="list-group-item list-group-item-action">
-                <a href="#">
+              <li className="list-group-item list-group-item-action active">
+                <a href="#" className="home">
                   <i className="fal fa-home"></i>
                   <span>Home</span>
                 </a>
               </li>
               <li className="list-group-item list-group-item-action">
-                <a href="#">
+                <a href="#" className="Documents">
                   <i
                     className="fad fa-file-alt"
                     style={{ color: "#B8B8B8" }}
@@ -96,14 +96,14 @@ class Header extends React.Component {
                 </a>
               </li>
               <li className="list-group-item list-group-item-action">
-                <a href="#">
+                <a href="#" className="Templates">
                   {" "}
                   <i className="fal fa-clone" style={{ color: "#B8B8B8" }}></i>
                   <span style={{ color: "#202225" }}>Templates</span>
                 </a>
               </li>
               <li className="list-group-item list-group-item-action">
-                <a href="#">
+                <a href="#" className="Training">
                   <i
                     className="fal fa-desktop"
                     style={{ color: "#B8B8B8" }}
@@ -173,13 +173,13 @@ class Header extends React.Component {
                 
                 <ul class="list-group">
                   <li class="list-group-item" style={{border: "none"}}>  
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item notification_list" href="#">
                       <div class="row">
                         <div class="col-md-2">
                           <img src={Group_user} width="35"/>
                         </div>
                         <div class="col-md-10">
-                            <label style={{marginBottom: "0px"}}>John Shared New document</label>
+                            <label style={{marginBottom: "0px"}}><b>John</b> <span style={{color:"#B8B8B8"}}>Shared</span> <b>New document</b></label>
                             <p style={{fontSize: "12px", color: "#919191"}}>December 3, 20 - 02:26 Am</p>
                         </div>
                       </div>
@@ -188,13 +188,13 @@ class Header extends React.Component {
                 </ul>
                 <ul class="list-group">
                   <li class="list-group-item" style={{border: "none"}}>  
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item notification_list" href="#">
                       <div class="row">
                         <div class="col-md-2">
                       <img src={Group_user} width="35"/>
                         </div>
                         <div class="col-md-10">
-                            <label style={{marginBottom: "0px"}}>John Shared New document</label>
+                            <label style={{marginBottom: "0px"}}><b>John</b> <span style={{color:"#B8B8B8"}}>Shared</span> <b>New document</b></label>
                             <p style={{fontSize: "12px" ,color: "#919191"}}>December 3, 20 - 02:26 Am</p>
                         </div>
                       </div>
@@ -203,13 +203,13 @@ class Header extends React.Component {
                 </ul>
                 <ul class="list-group">
                   <li class="list-group-item" style={{border: "none"}}>  
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item notification_list" href="#">
                       <div class="row">
                         <div class="col-md-2">
                           <img src={Group_user} width="35"/>
                         </div>
                         <div class="col-md-10">
-                            <label style={{marginBottom: "0px"}}>John Shared New document</label>
+                            <label style={{marginBottom: "0px"}}><b>John</b> <span style={{color:"#B8B8B8"}}>Shared</span> <b>New document</b></label>
                             <p style={{fontSize: "12px" ,color: "#919191"}}>December 3, 20 - 02:26 Am</p>
                         </div>
                       </div>
@@ -220,7 +220,7 @@ class Header extends React.Component {
                 </li>
                 <li className="nav-item dropdown">
                   <a
-                    className="nav-link dropdown-toggle"
+                    className="nav-link dropdown-toggle dropdown_icon"
                     href="#"
                     id="navbarDropdown"
                     role="button"
@@ -245,8 +245,8 @@ class Header extends React.Component {
                     </a>
                   </div>
                 </li>
-                <li className="nav-item">
-                  <img src={user} width="50" />
+                <li className="nav-item profile_img">
+                  <img src={user} width="40" />
                 </li>
                 <li className="nav-item">
                   <button className="Upgrade_btn">

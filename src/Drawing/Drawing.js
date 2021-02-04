@@ -14,6 +14,7 @@ import Screen1 from "../img/screen1.svg";
 import Screen2 from "../img/screen2.svg";
 import Screen3 from "../img/screen3.svg";
 import SortName from "../img/sort_name.svg";
+import Logo from "../img/sozo.jpg";
 import Konva from "konva";
 
 class Drawing extends React.Component {
@@ -170,7 +171,7 @@ class Drawing extends React.Component {
       <header>
         <div class="row " style={{ margin: "20px" }}>
           <div class="col-md-3 rename_document_col">
-            <img src="img/sozo.jpg" width="20" />
+            <img src={Logo} width="20" />
             <span className="renameDoc">
               <b>Rename Document</b>
               <i className="far fa-save fa-saveicon"></i>
